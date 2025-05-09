@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="javascript.js" defer></script>
+
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+
+    <!-- Welcome Section -->
+    <div class="container-1">
+      <h1 class="header">Welcome to Rock, Paper, Scissors!</h1>
+      <h2 class="animate">Are you ready to play?</h2>
+      <div class="instructions-container">
+        <div class="instructions">
+          You will play a total of 5 rounds against a Computer. Win for a prize at the end!
+        </div>
+        <div class="instructions">
+          Press <span class="clickable">Play</span> or Enter to start.
+        </div>
+        <button class="play-btn">Play</button>
+      </div>
+    </div>
+
+    <!-- Game Section -->
+    <div class="container-2">
+      <div class="start game-card">
+        <div class="scores">
+          Player: <span class="player">0</span> &nbsp;|&nbsp; Computer: <span class="computer">0</span>
+        </div>
+        <div class="choices"></div>
+        <div class="game">
+          <button><div class="icon-circle"><img src="./images/rock.png" id="rock" alt="rock" /></div></button>
+          <button><div class="icon-circle"><img src="./images/paper.png" id="paper" alt="paper" /></div></button>
+          <button><div class="icon-circle"><img src="./images/scissors.png" id="scissors" alt="scissors" /></div></button>
+        </div>
+        <div class="text"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Made by: Tala</div>
+
+    <!-- Background animation -->
+    <ul class="floating-bg">
+      <li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+
+    <div class="message"></div>
+  </body>
+</html>
